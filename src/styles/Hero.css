@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
         url(../assets/img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,7 +11,11 @@
     height: 225px;
     margin: 0 auto;
     border-radius: 25px;
+}
+
+.kasa-slogan {
     color: white;
     font-weight: 500;
     font-size: 48px;
+    padding: 0 20px;
 }
