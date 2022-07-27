@@ -1,14 +1,20 @@
+import { Routes, Route} from "react-router-dom"
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Logding from "./pages/logding";
 import Banner from "./components/Banner";
-import Hero from "./components/Hero";
-import ThumbnailsSection from "./components/ThumbnailsSection";
 
 function App() {
   return (
     <div className="App">
       <div>
         <Banner />
-        <Hero />
-        <ThumbnailsSection />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/logding" element={<Logding />} />
+
+        </Routes>              
       </div>
     </div>
   );

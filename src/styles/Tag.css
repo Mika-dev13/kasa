@@ -1,0 +1,18 @@
+.kasa-tag-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 10px;
+    margin: 10px 0;
+    background-color: #ff6060;
+    width: 115px;
+    height: 25px;
+    border-radius: 10px;
+}
+
+.kasa-tag-text {
+    width: 100%;
+    color: black;
+    white-space: nowrap;
+
+}
