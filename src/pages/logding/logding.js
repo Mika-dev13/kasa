@@ -1,14 +1,15 @@
 import { useParams } from "react-router"
-import Collaspe from "../../components/Collaspe"
 import { datasJSON } from "../../datas/DatasJson"
 import '../../styles/LogdingPage.css'
+import Collaspe from "../../components/Collaspe"
+import DescriptionLogding from "../../components/DescriptionLogding"
 
 
 function Logding() {
 
     const { pageId } = useParams()
 
-    const { description, equipments} = datasJSON.find( (item) => item.id === pageId)
+    const { description, equipments, title, location, host} = datasJSON.find( (item) => item.id === pageId)
  
     return (
 
@@ -16,9 +17,11 @@ function Logding() {
             {/* Slider datas=pitures */}
             {/* Afficher 5 etoitle trus si plein et false si vide en fonction du nombre de rating du logement */}
 
+            <section className="kasa-logding-description">
+                <DescriptionLogding title={title} location={location} host={host}/>
+            </section>
 
-
-            <section className="kasa-collapse-section">
+            <div className="kasa-collapse-section">
                 
                 <Collaspe key="description" title="Description">{description}</Collaspe>
                 
@@ -29,7 +32,9 @@ function Logding() {
                     ))}
                     </ul>
                 </Collaspe>
-            </section>
+            </div>
+
+            
 
             
         </div>

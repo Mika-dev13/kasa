@@ -1,0 +1,26 @@
+.kasa-description-content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+    color: #ff6060;
+   font-size: 1.8rem;
+}
+
+.kasa-description-title h1{
+    font-size: 3.6rem;
+    font-weight: 500;
+}
+
+.kasa-description-avatar{
+    display: flex;   
+    align-items: center;
+    text-align: right;
+}
+
+.kasa-description-avatar img {
+    width: 6.4rem;
+    height: 6.4rem;
+    object-fit: cover;
+    border-radius: 50%;
+    padding-left: 1rem;
+}
