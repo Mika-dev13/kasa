@@ -12,6 +12,7 @@ function ThumbnailsSection() {
                     key={id}
                     title={title}
                     cover={cover}
+                    id={id}
                 />
             ))}
         </section>

@@ -1,7 +1,7 @@
 import { Routes, Route} from "react-router-dom"
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Logding from "./pages/logding";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Logding from "./pages/logding/logding";
 import Banner from "./components/Banner";
 
 function App() {
@@ -12,8 +12,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/logding" element={<Logding />} />
-
+          <Route path="/logding/:pageId" element={<Logding />} />
+          <Route path="*" element={<Home />} />  
         </Routes>              
       </div>
     </div>

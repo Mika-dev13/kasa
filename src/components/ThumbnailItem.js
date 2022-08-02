@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom"
 import "../styles/ThumbnailItem.css";
 
-function ThumbnailItem({ title, cover }) {
+function ThumbnailItem({ id, title, cover }) {
+    console.log(id)
     return (
-        <Link to="/logding">
+        <Link to={`/logding/${id}`}>
         <article className="kasa-thumbnail-article">
             <figure className="kasa-thumbnail-figure">
                 <img className="kasa-thumbnail-img" src={cover} alt={title} />
