@@ -1,0 +1,7 @@
+.kasa-collapse-section{
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    max-width: 124rem;
+    margin: 0 auto;   
+}

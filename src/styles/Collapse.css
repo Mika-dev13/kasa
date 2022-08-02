@@ -1,5 +1,32 @@
 .kasa-collapse-container {
-    width: 80vw;
-    max-width: 1240px;
-    margin: 0 auto;
+    width: 58.2rem;
+    font-size: 1.8rem;
+    background-color: #f6f6f6;
+    border-radius: 1em;
+}
+
+.kasa-collapse-title{
+    display: flex;
+    justify-content: space-between; 
+    background-color: #ff6060;
+    color: white;
+    border-radius: 1rem;
+    padding: 1.3em 2em;
+}
+
+.kasa-collapse-title h3{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.kasa-collapse-text{
+    padding: 2em;    
+}
+
+.kasa-collapse-text ul{
+    list-style: none;
+}
+
+.kasa-collapse-text ul li {
+    padding-bottom: 0.5rem;
 }
