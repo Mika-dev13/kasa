@@ -1,8 +1,8 @@
+
 .kasa-collapse-container {
     width: 58.2rem;
     font-size: 1.8rem;
-    background-color: #f6f6f6;
-    border-radius: 1em;
+    
 }
 
 .kasa-collapse-title{
@@ -12,6 +12,7 @@
     color: white;
     border-radius: 1rem;
     padding: 1.3em 2em;
+    cursor: pointer;
 }
 
 .kasa-collapse-title h3{
@@ -20,7 +21,25 @@
 }
 
 .kasa-collapse-text{
-    padding: 2em;    
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    background-color: #f6f6f6;
+    border-radius: 1em;
+    padding: 2em;
+    transition: all .3s ease-in-out;    
+}
+
+.active {
+    visibility: visible;
+    height: auto;
+    opacity: 1;
+    overflow: hidden;
+    background-color: #f6f6f6;
+    border-radius: 1em;
+    padding: 2em;
+    
 }
 
 .kasa-collapse-text ul{
@@ -30,3 +49,14 @@
 .kasa-collapse-text ul li {
     padding-bottom: 0.5rem;
 }
+
+.kasa-collapse-chevron {
+    font-size: 1.2em;
+    transition: transform .3s ease-in-out;
+}
+
+.clicked{
+    transform: rotate(180deg);
+}
+
+

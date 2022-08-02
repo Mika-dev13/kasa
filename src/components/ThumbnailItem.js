@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import "../styles/ThumbnailItem.css";
 
 function ThumbnailItem({ id, title, cover }) {
-    console.log(id)
+    
     return (
         <Link to={`/logding/${id}`}>
         <article className="kasa-thumbnail-article">

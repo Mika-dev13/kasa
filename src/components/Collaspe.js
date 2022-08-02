@@ -1,16 +1,29 @@
-import { FaChevronUp } from "react-icons/fa";
+import { useState } from "react";
+import { FaChevronDown } from "react-icons/fa";
 import '../styles/Collapse.css'
 
 export default function Collaspe({title, children}) {
 
+    const [active, setActive] = useState(false)
+
+    const handleToggle = e => {
+        
+        return setActive(!active)
+    }
+
+    
+
     return (
         <div className="kasa-collapse-container">
-            <div className="kasa-collapse-title">
+            <div className="kasa-collapse-title" onClick={handleToggle}>
                 <h3>{title}</h3>
-                <FaChevronUp style={{fontSize: '1.3em'}}/>
+                <div>
+                    {/* {active ? <FaChevronUp className={"kasa-collapse-chevron"} /> : <FaChevronDown className={"kasa-collapse-chevron"}/> } */}
+                    <FaChevronDown className={`kasa-collapse-chevron ${active && "clicked"}`} />
+                </div>                          
             </div>
-            <div className="kasa-collapse-text">
-                <p>{children}</p>
+            <div className={`kasa-collapse-text ${active && "active"}`}>
+                <div>{children}</div>
             </div>
         </div>
     )
