@@ -4,26 +4,28 @@ import '../../styles/LogdingPage.css'
 import Collaspe from "../../components/Collaspe"
 import DescriptionLogding from "../../components/DescriptionLogding"
 import Tags from "../../components/Tags"
+import Stars from "../../components/Stars"
 
 
 function Logding() {
 
     const { pageId } = useParams()
-
-    const { description, equipments, title, location, host, tags} = datasJSON.find( (item) => item.id === pageId)
- 
+    const { description, equipments, title, location, host, tags, rating} = datasJSON.find( (item) => item.id === pageId)
+    
+    
     return (
 
         <div className="container">
             {/* Slider datas=pitures */}
             {/* Afficher 5 etoitle trus si plein et false si vide en fonction du nombre de rating du logement */}
-
+            
             <section className="kasa-logding-description">
                 <DescriptionLogding title={title} location={location} host={host}/>
             </section>
 
-            <div>
+            <div className="kasa-tags-stars-section">
                 <Tags tags={tags} />
+                <Stars rating={rating} />               
             </div>
 
             <div className="kasa-collapse-section">
@@ -37,13 +39,8 @@ function Logding() {
                     ))}
                     </ul>
                 </Collaspe>
-            </div>
-
-            
-
-            
+            </div>          
         </div>
-
     )
 }
 
