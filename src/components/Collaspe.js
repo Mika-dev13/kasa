@@ -10,15 +10,12 @@ export default function Collaspe({title, children}) {
         
         return setActive(!active)
     }
-
-    
-
+   
     return (
         <div className="kasa-collapse-container">
             <div className="kasa-collapse-title" onClick={handleToggle}>
                 <h3>{title}</h3>
                 <div>
-                    {/* {active ? <FaChevronUp className={"kasa-collapse-chevron"} /> : <FaChevronDown className={"kasa-collapse-chevron"}/> } */}
                     <FaChevronDown className={`kasa-collapse-chevron ${active && "clicked"}`} />
                 </div>                          
             </div>

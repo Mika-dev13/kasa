@@ -1,0 +1,19 @@
+.container{
+    width: 80vw;
+    max-width: 124rem;
+    margin: 0 auto; 
+}
+
+.kasa-about-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url(../../assets/about_img.jpg);
+    width: 100%;
+    height: 22rem;
+    border-radius:2.5rem;
+}
+
+.kasa-about-collaspes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10rem;
+}

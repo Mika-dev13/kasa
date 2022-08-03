@@ -1,6 +1,7 @@
 
 import Hero from "../../components/Hero";
 import ThumbnailsSection from "../../components/ThumbnailsSection";
+import Footer from "../../components/Footer";
 
 
 function Home() {
@@ -9,6 +10,7 @@ function Home() {
         <div>
             <Hero />
             <ThumbnailsSection />
+            <Footer />
         </div>
     )
 }

@@ -8,7 +8,7 @@ export default function Stars({rating}) {
     return (
         <div>
             {ratingStars.map(ratingStar => (     
-                    <IoStar className={`${ratingStar <= rating ? "kasa-star-color" : ""} kasa-star`} />
+                    <IoStar key={`star-${ratingStar}`} className={`${ratingStar <= rating ? "kasa-star-color" : ""} kasa-star`} />
                 ))}
                       
         </div>

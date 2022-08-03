@@ -1,0 +1,29 @@
+.container{
+    width: 80vw;
+    max-width: 124rem;
+    margin: 0 auto; 
+}
+
+/* =================================== Kasa carousel section ================================= */
+.kasa-carousel-container{
+    width: 100%;
+    max-width: 124rem;
+    height: 41.5rem;
+    border-radius: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+/* =================================== Kasa stars/tags section ================================= */
+.kasa-tags-stars-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* =================================== Kasa collapse ================================= */
+.kasa-collapse-section{
+    display: flex;
+    justify-content: space-between;   
+    margin-bottom:5rem; 
+    gap: 2rem;
+}
