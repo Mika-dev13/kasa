@@ -3,9 +3,9 @@
     justify-content: space-between;
     align-items: center;
     width: 80vw;
-    max-width: 1240px;
+    max-width: 124rem;
     margin: 0 auto;
-    padding: 50px 0px 60px 0px;
+    padding: 5rem 0px 1rem 0px;
 }
 
 .kasa-navigation {
@@ -14,12 +14,31 @@
 }
 
 .kasa-navigation-item:nth-child(1) {
-    padding: 0 15px;
+    padding-right: 5.7rem;
 }
 
 .kasa-navigation-item {
     text-decoration: none;
     color: #FF6060;
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 500;
+}
+
+@media screen and (max-width: 374px) {
+    .kasa-banner {
+        padding-top: 2rem;
+    }
+
+    .kasa-navigation-item:nth-child(1) {
+        padding-right:  1rem;
+    }
+    .kasa-navigation-item {
+        font-size: 1.2rem;
+    }
+
+    .kasa-logo {
+        width: 14.5rem;
+        height: 4.7rem;
+        margin-bottom: 0;
+    }
 }

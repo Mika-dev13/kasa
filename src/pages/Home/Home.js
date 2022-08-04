@@ -1,4 +1,4 @@
-
+import '../Home/Home.css'
 import Hero from "../../components/Hero";
 import ThumbnailsSection from "../../components/ThumbnailsSection";
 import Footer from "../../components/Footer";
@@ -8,10 +8,14 @@ function Home() {
 
     return (
         <div>
-            <Hero />
-            <ThumbnailsSection />
+            <div className='home-container'>
+                <Hero />
+                <ThumbnailsSection />
+            </div>
             <Footer />
-        </div>
+        </div> 
+        
+        
     )
 }
 

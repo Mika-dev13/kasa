@@ -1,0 +1,49 @@
+.container{
+    width: 80vw;
+    max-width: 124rem;
+    margin: 0 auto; 
+}
+
+.kasa-404-content {
+    color: #ff6060;
+    text-align: center;
+}
+
+.kasa-404-content h1 {
+    font-size: 28.8rem;
+    font-weight: 700;
+    margin-bottom: 6.6rem;
+    margin-top: 4rem;
+}
+
+.kasa-404-content p {
+    text-align: center;
+    font-size: 3.6rem;
+    font-weight: 500;
+    margin-bottom: 18.2rem;
+}
+
+.kasa-404-link {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #ff6060;
+    padding-bottom: 5rem;
+}
+
+@media  screen and (max-width: 374px) {
+    .kasa-404-content h1 {
+        font-size: 9.6rem;
+        margin-bottom: 1.1rem;
+        margin-top: 20rem;
+    }
+
+    .kasa-404-content p {
+        font-size: 1.8rem;
+        margin-bottom: 13.3rem;
+    }
+
+    .container {
+        width: 33.5rem important!;
+        background-color: blue;
+    }
+}

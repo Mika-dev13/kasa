@@ -4,6 +4,7 @@ import "../styles/ThumbnailItem.css";
 function ThumbnailItem({ id, title, cover }) {
     
     return (
+      
         <Link to={`/logding/${id}`}>
         <article className="kasa-thumbnail-article">
             <figure className="kasa-thumbnail-figure">

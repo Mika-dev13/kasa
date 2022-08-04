@@ -1,0 +1,20 @@
+.kasa-Thumbnail-section {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin: 5rem 0;
+    padding: 5rem;
+    max-width: 1240px;
+    border-radius: 25px;
+    background-color: #f6f6f6;
+}
+
+
+@media screen and (max-width: 375px) {
+    .kasa-Thumbnail-section {
+        padding: 1rem;
+        background-color: #fff;
+        gap: 1rem;
+    }
+}
