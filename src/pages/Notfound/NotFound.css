@@ -30,11 +30,11 @@
     padding-bottom: 5rem;
 }
 
-@media  screen and (max-width: 374px) {
+@media  screen and (max-width: 376px) {
     .kasa-404-content h1 {
         font-size: 9.6rem;
         margin-bottom: 1.1rem;
-        margin-top: 20rem;
+        margin-top: 15rem;
     }
 
     .kasa-404-content p {
@@ -43,7 +43,6 @@
     }
 
     .container {
-        width: 33.5rem important!;
-        background-color: blue;
+        width: 33.5rem;
     }
 }

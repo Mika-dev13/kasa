@@ -8,10 +8,9 @@
     height: 100%;
     border-radius: 2.5rem;
     background-position: center;
-    block-size: cover;
 }
 
-.kasa-carousel-chevron{
+.kasa-carousel-chevron {
     position: absolute;
     top: 50%;
     transform: translate(0 50%);
@@ -26,4 +25,23 @@
 
 .right{
     right: 2.3rem;
+}
+
+@media screen and (max-width: 376px) {
+    .kasa-carousel-img {
+        border-radius: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .kasa-carousel-chevron {
+        font-size: 2.5rem;
+    }
+    .left{
+        left: .5rem;
+    }
+    
+    .right{
+        right: .5rem;
+    }
+
 }

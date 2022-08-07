@@ -13,6 +13,7 @@ export default function Carousel({pictures}) {
         setCurrentIndex(newIndex)
 
     }
+    
     const goToNext = () => {
 
         const isLastPicture = currentIndex === pictures.length - 1
@@ -20,7 +21,6 @@ export default function Carousel({pictures}) {
         setCurrentIndex(newIndex)
 
     }
-
 
     return (
         <div className='kasa-carousel-img-container'>

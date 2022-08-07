@@ -1,4 +1,4 @@
-.container{
+.collaspe-container{
     width: 80vw;
     max-width: 124rem;
     margin: 0 auto; 
@@ -14,6 +14,41 @@
 .kasa-about-collaspes-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-bottom: 10rem;
+    margin-bottom: 10rem; 
+    padding: 0 7rem;
+}
+
+.collaspe_large .kasa-collapse-title {
+    width: 102.3rem;
+}
+
+.collaspe_large .kasa-collapse-text {
+    width: 102.3rem;
+}
+
+@media screen and (max-width: 376px) {
+    .collaspe-container {
+        width: 100vw;
+        margin: 0 1rem;
+    }
+    .kasa-about-img {
+        width: 33.5rem;
+        padding: 0 1rem;
+    }
+    
+    .kasa-about-collaspes-container {
+        width: 33.5rem;
+        padding: 2rem 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .collaspe_large .kasa-collapse-title {
+        width: 33.5rem;
+        height: 3rem;
+        border-radius: 0.5rem;
+    }
+
+    .collaspe_large .kasa-collapse-text {
+        width: 28.75rem;
+    }
 }

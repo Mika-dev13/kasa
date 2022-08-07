@@ -1,8 +1,9 @@
-.container{
+.logding-container{
     width: 80vw;
     max-width: 124rem;
     margin: 0 auto; 
 }
+
 
 /* =================================== Kasa carousel section ================================= */
 .kasa-carousel-container{
@@ -13,24 +14,56 @@
     margin-bottom: 3rem;
 }
 
-/* =================================== Kasa stars/tags section ================================= */
-.kasa-tags-stars-section{
+/* =================================== Kasa description section ================================= */
+.kasa-logding-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+}
+
+.kasa-logding-title {
+    display: flex;
+    flex-direction: column;
+}
+
+/* =================================== Kasa stars/tags section ================================= */
+.kasa-avatar-stars-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* =================================== Kasa collapse ================================= */
 .kasa-collapse-section{
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-between;  
+    flex-wrap: wrap; 
     margin-bottom:5rem; 
     gap: 2rem;
 }
 
-@media screen and (max-width: 374px) {
-    .container {
-        width: 33.5rem important!;
-        background-color: blue;
+@media screen and (max-width: 376px) {
+    .logding-container {
+        width: 33.5rem;
+    }
+    .kasa-carousel-container {
+        height: 25.5rem;
+        border-radius: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .kasa-logding-content {
+        flex-direction: column;
+    }
+
+    .kasa-avatar-stars-section {
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .kasa-collapse-section {
+        margin-bottom: 0;
+        gap: 0;
+       
     }
 }

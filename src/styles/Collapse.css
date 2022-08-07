@@ -1,14 +1,15 @@
-
 .kasa-collapse-container {
     position: relative;
     z-index: 10;
     width: 58.2rem;
     font-size: 1.8rem;
+    font-weight: 400;
 }
 
 .kasa-collapse-title{
     display: flex;
     justify-content: space-between; 
+    align-items: center;
     background-color: #ff6060;
     color: white;
     border-radius: 1rem;
@@ -24,27 +25,22 @@
 
 .kasa-collapse-text{
     position: relative;
-    /* top: 3em;
-    right: 0;
-    left: 0; */
+    display: none;
     z-index: -1;
     margin-top: -2rem;
-    visibility: hidden;
     height: 0;
     opacity: 0;
-    overflow: hidden;
     background-color: #f6f6f6;
     border-radius: 1em;
     padding: 2em 2em 1.5em 2em;
-    transition: all .3s ease-in-out;    
 }
 
 .active {
-    visibility: visible;
+    display: block;
     height: auto;
     opacity: 1;
-    overflow: hidden;
     background-color: #f6f6f6;
+    animation: fade-in .3s forwards; 
 }
 
 .kasa-collapse-text ul{
@@ -62,6 +58,46 @@
 
 .clicked{
     transform: rotate(180deg);
+}
+
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: scaley(0 0);
+        transform-origin: top;
+    }
+
+    100%{
+        opacity: 1;
+        transform: scaley(0 1);
+    }
+}
+
+
+@media screen and (max-width: 376px) {
+    .kasa-collapse-container {
+        margin-bottom: 2rem;
+        font-size: 1.2rem;
+    }
+
+    .kasa-collapse-title {
+        margin-top: 0;
+        width: 33.5rem;
+        height: 3rem;
+        padding: 0;
+        border-radius: 0.5rem;
+    }
+
+    .kasa-collapse-title h3 {
+        font-size: 1.3rem;
+        padding-left: 1rem;
+    }
+
+    .kasa-collapse-chevron {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
 }
 
 

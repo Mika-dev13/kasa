@@ -13,8 +13,8 @@
     list-style: none;
 }
 
-.kasa-navigation-item:nth-child(1) {
-    padding-right: 5.7rem;
+.kasa-navigation-item:nth-child(2) {
+    padding-left: 5.7rem;
 }
 
 .kasa-navigation-item {
@@ -24,13 +24,14 @@
     font-weight: 500;
 }
 
-@media screen and (max-width: 374px) {
+@media screen and (max-width: 376px) {
     .kasa-banner {
         padding-top: 2rem;
+        width: 33.5rem;
     }
 
-    .kasa-navigation-item:nth-child(1) {
-        padding-right:  1rem;
+    .kasa-navigation-item:nth-child(2) {
+        padding-left:  1rem;
     }
     .kasa-navigation-item {
         font-size: 1.2rem;

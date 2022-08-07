@@ -2,8 +2,8 @@ import { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import '../styles/Collapse.css'
 
-export default function Collaspe({title, children}) {
-
+export default function Collaspe({title, taille, children}) {
+    console.log(taille)
     const [active, setActive] = useState(false)
 
     const handleToggle = e => {
@@ -12,7 +12,7 @@ export default function Collaspe({title, children}) {
     }
    
     return (
-        <div className="kasa-collapse-container">
+        <div className={`kasa-collapse-container ${taille === "large" && "collaspe_large"}`}>
             <div className="kasa-collapse-title" onClick={handleToggle}>
                 <h3>{title}</h3>
                 <div>

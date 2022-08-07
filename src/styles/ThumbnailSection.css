@@ -11,10 +11,20 @@
 }
 
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 1040px) {
     .kasa-Thumbnail-section {
-        padding: 1rem;
+        gap: 2rem;
+        padding: 3rem;
+        justify-content: center;
+        width: 33.5rem;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .kasa-Thumbnail-section {
+        padding: 0;
         background-color: #fff;
-        gap: 1rem;
+        gap: 0;
+        margin: 1rem 0;
     }
 }
