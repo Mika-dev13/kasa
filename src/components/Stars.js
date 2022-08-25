@@ -1,16 +1,19 @@
 import { IoStar } from "react-icons/io5";
-import '../styles/Stars.css'
+import "../styles/Stars.css";
 
-export default function Stars({rating}) {
-    
-    const ratingStars = [1, 2, 3, 4, 5]
+export default function Stars({ rating }) {
+  const ratingStars = [1, 2, 3, 4, 5];
 
-    return (
-        <div>
-            {ratingStars.map(ratingStar => (     
-                    <IoStar key={`star-${ratingStar}`} className={`${ratingStar <= rating ? "kasa-star-color" : ""} kasa-star`} />
-                ))}
-                      
-        </div>
-    )
+  return (
+    <div>
+      {ratingStars.map((ratingStar, index) => (
+        <IoStar
+          key={`star-${index}`}
+          className={`${
+            ratingStar <= rating ? "kasa-star-color" : ""
+          } kasa-star`}
+        />
+      ))}
+    </div>
+  );
 }

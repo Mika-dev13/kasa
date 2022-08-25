@@ -1,32 +1,32 @@
 .kasa-description-avatar {
-    display: flex; 
-    justify-content: flex-end;
-    align-items: center;
-    text-align: right;
-    color: #ff6060;
-    font-size: 1.8rem;
-    order: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: right;
+  color: #ff6060;
+  font-size: 1.8rem;
+  order: 2;
 }
 
 .kasa-description-avatar img {
-    width: 6.4rem;
-    height: 6.4rem;
-    object-fit: cover;
-    border-radius: 50%;
-    padding-left: 1rem;
+  width: 6.4rem;
+  height: 6.4rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 1rem;
 }
 
 .kasa-description-avatar span {
-    width: 10rem;
+  width: 10rem;
 }
 
 @media screen and (max-width: 376px) {
-    .kasa-description-avatar img {
-        width: 3.2rem;
-        height: 3.2rem;
-    }
+  .kasa-description-avatar img {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
 
-    .kasa-description-avatar {
-        font-size: 1.2rem;
-    }
+  .kasa-description-avatar {
+    font-size: 1.2rem;
+  }
 }
