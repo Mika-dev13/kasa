@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/logo.svg";
 import "../styles/Banner.css";
 
@@ -10,12 +10,30 @@ function Banner() {
       </Link>
 
       <nav className="kasa-navigation">
-        <Link to="/" className="kasa-navigation-item">
+        <NavLink
+          to="/"
+          className="kasa-navigation-item"
+          style={({ isActive }) => {
+            return {
+              textDecoration: isActive ? "underline" : "none",
+              backgroundColor: "white",
+            };
+          }}
+        >
           Accueil
-        </Link>
-        <Link to="/about" className="kasa-navigation-item">
+        </NavLink>
+        <NavLink
+          to="/about"
+          className="kasa-navigation-item"
+          style={({ isActive }) => {
+            return {
+              textDecoration: isActive ? "underline" : "none",
+              backgroundColor: "white",
+            };
+          }}
+        >
           À propos
-        </Link>
+        </NavLink>
       </nav>
     </header>
   );
