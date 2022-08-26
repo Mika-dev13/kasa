@@ -31,8 +31,6 @@ function Logding() {
   return (
     <div>
       <div className="logding-container">
-        {/* Slider datas=pitures */}
-        {/* Afficher 5 etoitle trus si plein et false si vide en fonction du nombre de rating du logement */}
 
         <div className="kasa-carousel-container">
           <Carousel pictures={pictures} />
