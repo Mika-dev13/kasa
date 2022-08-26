@@ -21,14 +21,13 @@ export default function Carousel({ pictures }) {
     <div className="kasa-carousel-img-container">
       <FaChevronLeft
         className={`${
-          pictures.length === 1 ? "display" : ""
+          pictures.length === 1 && "display"
         } kasa-carousel-chevron left`}
         onClick={goToPrevious}
-        // style={`${pictures.length === 1 ? "display:none" : ""}`}
       />
       <FaChevronRight
         className={`${
-          pictures.length === 1 ? "display" : ""
+          pictures.length === 1 && "display"
         } kasa-carousel-chevron right`}
         onClick={goToNext}
       />
